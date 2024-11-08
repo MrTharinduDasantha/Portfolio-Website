@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #222;
+        margin-bottom: 25px;
+        transition: transform 200ms ease-in-out;
+    }
+
+    a h3 {
+        margin-top: 10px;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+    }
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (width >= 800px) {
+    .projectsContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 0 30px;
+    }
+}
